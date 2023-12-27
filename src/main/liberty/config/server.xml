@@ -1,0 +1,28 @@
+<server description="Liberty Server">
+
+	<include location="xpo-feature-set-ee8.xml" />
+	<include location="logging.xml" />
+	<include location="libraries.xml" />
+	<include location="ds.xml" />
+
+	<httpEndpoint httpPort="9080" httpsPort="9443" id="defaultHttpEndpoint" />
+
+	<applicationManager autoExpand="true" />
+
+	<applicationMonitor updateTrigger="mbean" />
+
+	<managedThreadFactory jndiName="concurrent/threadFactory"/>
+
+	<managedExecutorService jndiName="concurrent/executorServiceShipment">
+		<contextService>
+			<jeeMetadataContext/>
+		</contextService>
+		<concurrencyPolicy id="normal" max="500" maxQueueSize="2000"/>
+	</managedExecutorService>
+
+	<webApplication
+			location="${app.name}.war"
+			contextRoot="${app.context.root}">
+		<classloader commonLibraryRef="AppLib,OracleLib"/>
+	</webApplication>
+</server>

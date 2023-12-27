@@ -1,0 +1,12 @@
+<server>
+	<library id="OracleLib">
+		<file name="${wlp.install.dir}/../workspaces/services/ltl-api-shipment-property/liberty/database_drivers/oracle/ojdbc8.jar" />
+	</library>
+	<library id="Db2Lib">
+		<file name="${wlp.install.dir}/../workspaces/services/ltl-api-shipment-property/liberty/database_drivers/db2/db2jcc_license_cisuz.jar" />
+		<file name="${wlp.install.dir}/../workspaces/services/ltl-api-shipment-property/liberty/database_drivers/db2/db2jcc.jar" />
+	</library>
+	<library id="AppLib">
+		<folder dir="${wlp.install.dir}/../workspaces/services/ltl-api-shipment-property/liberty/shipment/local" />
+	</library>
+</server>

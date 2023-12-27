@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mappings xmlns="http://dozer.sourceforge.net" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://dozer.sourceforge.net http://dozer.sourceforge.net/schema/beanmapping.xsd">
+	<!-- This should only be used to exclude relational mappings within entities! -->
+
+	<mapping map-null="false">
+		<class-a>com.xpo.ltl.api.shipment.service.entity.ShmShipment</class-a>
+		<class-b>com.xpo.ltl.api.shipment.service.entity.ShmShipment</class-b>
+
+		<field-exclude>
+			<a>shmAcSvcs</a>
+			<b>shmAcSvcs</b>
+		</field-exclude>
+		<field-exclude>
+			<a>shmAdvBydCarrs</a>
+			<b>shmAdvBydCarrs</b>
+		</field-exclude>
+		<field-exclude>
+			<a>shmAsEntdCusts</a>
+			<b>shmAsEntdCusts</b>
+		</field-exclude>
+		<field-exclude>
+			<a>shmCommodities</a>
+			<b>shmCommodities</b>
+		</field-exclude>
+		<field-exclude>
+			<a>shmCustomsBonds</a>
+			<b>shmCustomsBonds</b>
+		</field-exclude>
+		<field-exclude>
+			<a>shmCustomsCntrls</a>
+			<b>shmCustomsCntrls</b>
+		</field-exclude>
+		<field-exclude>
+			<a>shmHandlingUnits</a>
+			<b>shmHandlingUnits</b>
+		</field-exclude>
+		<field-exclude>
+			<a>shmHazMats</a>
+			<b>shmHazMats</b>
+		</field-exclude>
+		<field-exclude>
+			<a>shmLnhDimensions</a>
+			<b>shmLnhDimensions</b>
+		</field-exclude>
+		<field-exclude>
+			<a>shmMgmtRemarks</a>
+			<b>shmMgmtRemarks</b>
+		</field-exclude>
+		<field-exclude>
+			<a>shmMiscLineItems</a>
+			<b>shmMiscLineItems</b>
+		</field-exclude>
+		<field-exclude>
+			<a>shmMovements</a>
+			<b>shmMovements</b>
+		</field-exclude>
+		<field-exclude>
+			<a>shmRemarks</a>
+			<b>shmRemarks</b>
+		</field-exclude>
+		<field-exclude>
+			<a>shmBillEntryStats</a>
+			<b>shmBillEntryStats</b>
+		</field-exclude>
+		<field-exclude>
+			<a>shmShipments</a>
+			<b>shmShipments</b>
+		</field-exclude>	
+		<field-exclude>
+			<a>shmSrNbrs</a>
+			<b>shmSrNbrs</b>
+		</field-exclude>
+		<field-exclude>
+			<a>shmOpsShipment</a>
+			<b>shmOpsShipment</b>
+		</field-exclude>
+		<field-exclude>
+			<a>shmShipment</a>
+			<b>shmShipment</b>
+		</field-exclude>		
+		<field-exclude>
+			<a>shmEventLogs</a>
+			<b>shmEventLogs</b>
+		</field-exclude>										
+	</mapping>
+
+</mappings>

@@ -1,0 +1,22 @@
+<server>
+	<dataSource id="ShipmentXA" jndiName="jdbc/ShipmentXA" type="javax.sql.XADataSource">
+         <jdbcDriver LibraryRef="OracleLib" javax.sql.XADataSource="oracle.jdbc.xa.client.OracleXADataSource" />
+         <properties.oracle URL="jdbc:oracle:thin:@ltlapdevh.xpo.com:5482/ltlapdev" password="LTLWASSHMI" user="LTLWASSHMI"/>
+         <connectionManager maxPoolSize="10" minPoolSize="1"/>
+    </dataSource>
+    <dataSource id="ShipmentMirrorXA" jndiName="jdbc/ShipmentMirrorXA" type="javax.sql.XADataSource">
+         <jdbcDriver LibraryRef="OracleLib" javax.sql.XADataSource="oracle.jdbc.xa.client.OracleXADataSource" />
+         <properties.oracle URL="jdbc:oracle:thin:@ltlapdevh.xpo.com:5482/ltlapdev" password="LTLWASSHMI" user="LTLWASSHMI"/>
+         <connectionManager maxPoolSize="10" minPoolSize="1"/>
+    </dataSource>
+    <dataSource id="ShipmentDB2XA" jndiName="jdbc/ShipmentDB2XA" type="javax.sql.XADataSource">
+       <jdbcDriver libraryRef="Db2Lib" javax.sql.XADataSource="com.ibm.db2.jcc.DB2XADataSource" />    
+       <properties.db2.jcc currentSchema="CTSI" databaseName="DB2TB090" password="GMZ8WRS3" portNumber="50001" serverName="gateway-db2t.con-way.com" user="CTSIWAS"/>    
+       <connectionManager maxPoolSize="10" minPoolSize="1"/>    
+    </dataSource>
+    <dataSource id="ShipmentRPTXA" jndiName="jdbc/ShipmentRPTXA" type="javax.sql.XADataSource">
+         <jdbcDriver LibraryRef="OracleLib" javax.sql.XADataSource="oracle.jdbc.xa.client.OracleXADataSource" />
+         <properties.oracle URL="jdbc:oracle:thin:@rptqh.xpo.com:5090/rptq" password="LTLWASSHM" user="LTLWASSHM"/>
+         <connectionManager maxPoolSize="10" minPoolSize="1"/>
+    </dataSource>
+</server>

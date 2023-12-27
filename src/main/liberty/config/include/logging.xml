@@ -1,0 +1,6 @@
+<server>
+	<logging
+		traceSpecification="com.ibm.ws.webcontainer*=all:com.ibm.wsspi.webcontainer*=all:HTTPChannel=all:GenericBNF=all:HTTPDispatcher=all"
+		traceFileName="${wlp.install.dir}\usr\servers\defaultServer\logs\trace.log" maxFileSize="20" maxFiles="10"
+		traceFormat="BASIC" />
+</server>
